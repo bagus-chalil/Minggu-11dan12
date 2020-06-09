@@ -23,8 +23,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('contact.php');
 	}
 
-	public function cetakLaporan(){
-		$data['sekolah2'] = $this->db->query("SELECT *FROM sekolah2 ORDER BY id DESC")->result();
+	public function cetakLaporan($id_pdf){
+		$data['sekolah2'] = $this->db->get_where('sekolah2',['id'=>$id_pdf])->result();
 		$dompdf = new DOMPDF();
 
 		

@@ -50,7 +50,7 @@
 										<td width="250">
 											<a href="<?php echo site_url('admin/products/edit/'.$product->id) ?>"
 											 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-											<a href="<?php echo site_url('welcome/cetaklaporan') ?>"
+											<a href="<?php echo site_url('welcome/cetaklaporan/'.$product->id) ?>"
 											 class="btn btn-small"><i class="fas fa-file-text-o" aria-hidden="true"></i>Cetak</a>
 											<a onclick="deleteConfirm('<?php echo site_url('admin/products/delete/'.$product->id) ?>')"
 											 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
